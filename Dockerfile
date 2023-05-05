@@ -1,5 +1,5 @@
 # Based on the boot image
-FROM 10.122.18.18:8082/healthcheck/smart_storage_dagster
+FROM 10.122.18.18:8082/healthcheck/dagster_worker
 MAINTAINER niezy4 <niezy4@lenovo.com>
 ENV LANG en_US.UTF-8
 RUN rm -rf /data/project/test
