@@ -4,7 +4,7 @@ from kombu import Queue
 import multiprocessing
 dagster_celery_name = "dagster_queue"
 app = Celery('lite_execution',
-             broker="amqp://admin:admin@10.122.83.86:5672//healthcheck",
+             broker="amqp://admin:admin@10.122.71.160:5672//healthcheck",
              include=['dagster_celery_job.tasks.dagster_task'])
 app.conf.update(
     CELERY_TASK_SERIALIZER='json',
